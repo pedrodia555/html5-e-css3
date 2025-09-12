@@ -1,0 +1,43 @@
+@charset "UTF-8";
+* {
+font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: rgb(203, 221, 255);
+}
+main {
+    background-color: white;
+    border-radius: 20px;
+    border: solid 3px #123859;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+}
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+h1 {
+    color: #123859;
+    background-color:#6AC4D9 ;
+    text-align: center;
+}
+h2 {
+    color: #123859;
+    text-align: center;
+}
+img {
+ border-radius: 20px;   
+}
+a {
+    background-color: darkblue;
+    color: white;
+}
+div {
+    background-color: rgb(13, 13, 155);
+    width: 200000xm;
+    height: 30px;
+    text-align: center;
+}
+li {
+}
