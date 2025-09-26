@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transision</title>
+    <style>
+        .cube{
+            border: 2px solid black;
+            background-color: brown;
+            background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/7dbfc100-18a1-408b-a95e-23b28eb59678/d6msqc3-230b9f3d-5dad-4dcb-bc98-53fd85555dd6.png);
+            width: 300px;
+            height: 300px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 10px;
+            transition-duration: .5s;
+        }
+        #d1:hover{
+            border-radius: 50%;
+            transition-duration: .2s;
+        }
+        #d2:hover{
+            background-color: blue;
+            transition-duration: .5s;
+        }
+        #d3:hover {
+            border-radius: 50%;
+            transform: rotate(360deg);
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        #d4:hover{
+            background-color: blue;
+            transform: rotate(360deg);
+            transition-duration: 1s;
+        }
+        #d5:hover{
+            background-color: blue;
+            border-radius: 50%;
+            transform: rotate(360deg);
+            transition-duration: 3s;
+            transition-timing-function: ease;
+            transition-delay: .3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>transition</h1>
+    <div class="cube" id="d1"></div>
+    <div class="cube" id="d2"></div>
+    <div class="cube" id="d3"></div>
+    <div class="cube" id="d4"></div>
+    <div class="cube" id="d5"></div>
+</body>
+</html>

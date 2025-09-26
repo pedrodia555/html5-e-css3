@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.quadrado{
+    position: relative;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+}
+
+span{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#d1{
+    background-color: cadetblue;
+}
+
+#d2{
+    background-image: linear-gradient(to bottom,red,green);
+}
+
+#d3{
+    background-size: 300px;
+    background-image: url("imagens/wood.jpg");
+    background-position: center center;
+    background-color: white;
+}
+body{
+    background-color: black;
+    background-image: url("imagens/bricks.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}

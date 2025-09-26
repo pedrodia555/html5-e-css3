@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            width: 200px;
+            padding: 5px;
+        }
+        th{
+            text-align: center;
+            background-color: #eefaff;
+        }
+        thead th{
+            text-align: center;
+            background-color: rgb(202, 235, 255);
+        }
+        caption{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">genero</th>
+                <th scope="col">nomes</th>
+                <th scope="colgroup" colspan="3">filmes</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">mulheres</th>
+                <td>julieta</td>
+                <td>alice no pais das maravilhas</td>
+                <td>diario de uma pricesa</td>
+                <td>barbie</td>
+            </tr>
+            <td>jenifer</td>
+            <td>encanto</td>
+            <td>matilda</td>
+            <td>A Viagem de Chihiro</td>
+            <tr>
+                <tr>
+                    <td>carvalha</td>
+                    <td>valente</td>
+                    <td>frozen</td>
+                    <td>moana</td>
+                </tr>
+            <th rowspan="4" scope="rowgroup">homems</th>
+            <td>pedro</td>
+            <td>indie cross</td>
+            <td>skibidi toilet</td>
+            <td>brainrot o filme</td>
+            </tr>
+            <tr>
+                <td>kico</td>
+                <td>chaves</td>
+                <td>chapolim colorado</td>
+                <td>turma da monica</td>
+            </tr>
+            <tr>
+                <td>braiam</td>
+                <td>pepa pig</td>
+                <td>o macaco</td>
+                <td>demon slayer</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

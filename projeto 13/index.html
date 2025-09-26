@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela conpleta</title>
+    <style>
+        th,td{
+            border: 1px solid black;
+            height: 50px;
+            width: 200px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: rgb(235, 235, 235);
+        }
+        .back{
+            background-color: rgb(235, 235, 235);
+        }
+        col.area{
+            background-color: azure;
+        }
+        #conteiner{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <table>
+            <colgroup>
+                <col class="area" span="1">
+                <col class="disiplina">
+                <col class="nota1">
+                <col class="nota2">
+                <col class="media">
+            </colgroup>
+            <thead>
+                <tr>
+                    <colgroup>
+                        <th scope="col">area</th>
+                        <th scope="col">disiplina</th>
+                        <th scope="col">nota 1</th>
+                        <th scope="col">nota 2</th>
+                        <th scope="col">media</th>
+                    </colgroup>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">exatas</th>
+                    <td>matematica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>fisica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>quimica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="back">
+                    <th colspan="4" scope="row">media das exatas</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">humanas</th>
+                    <td>historia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="back">
+                    <th colspan="4" scope="row">media da humanas</th>
+                    <td>0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vero perferendis eos ipsa cum quibusdam dolorem eius veniam libero rem sit soluta, odit natus atque quis quaerat est nulla temporibus?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vero perferendis eos ipsa cum quibusdam dolorem eius veniam libero rem sit soluta, odit natus atque quis quaerat est nulla temporibus?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vero perferendis eos ipsa cum quibusdam dolorem eius veniam libero rem sit soluta, odit natus atque quis quaerat est nulla temporibus?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vero perferendis eos ipsa cum quibusdam dolorem eius veniam libero rem sit soluta, odit natus atque quis quaerat est nulla temporibus?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vero perferendis eos ipsa cum quibusdam dolorem eius veniam libero rem sit soluta, odit natus atque quis quaerat est nulla temporibus?</p>
+</body>
+</html>
