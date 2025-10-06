@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    margin: 0;
+    background:black url(pacote-d013/pacote-d013/imagens/fundo-madeira.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.celular{
+    position: absolute;
+    width: 232px;
+    height: 469px;
+    background:url(pacote-d013/pacote-d013/imagens/frame-iphone.png) no-repeat;
+    background-size: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#tela{
+    position: relative;
+    top: 59px;
+    left: 16px;
+    width: 200px;
+    height: 353px;
+}
+.redes{
+    text-align: right;
+}
+a img{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    border:1px solid rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+a img:hover{
+    border:2px solid yellow;
+    width: 70px;
+    height: 70px;
+    transition-duration: .1s;
+
+}

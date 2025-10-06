@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="index.php" method="get">
+        <fieldset>
+            <legend>cadastro</legend>
+            <p><label for="inome">usuario: </label><input type="text" name="nome" id="inome" placeholder="coloque seu nome de usuario aqui!" required autocomplete="username"></p>
+            <p><label for="iidade">idade: </label><input type="number" name="idade" id="iidade" placeholder="coloque sua idade aqui!" required autocomplete="bday" max="100" min="10"></p>
+            <p><label for="iemail">email: </label><input type="email" name="email" id="iemail" placeholder="coloque seu email aqui!" required autocomplete="email">
+            </p>
+            <p><label for="idata">data de nacimento: </label><input type="date" name="data" id="idata" placeholder="coloque sua data de nacimento aqui!" autocomplete="bday">
+            </p>
+            <p><label for="itel">telefone</label><input type="tel" name="tel" id="itel" required placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"></p>
+            <p><label for="isenha">senha: </label><input type="password" name="senha" id="isenha" placeholder="crie uma senha aqui!" required minlength="5" maxlength="20" size="20" autocomplete="new-password"></p>
+            <p>você é fã do oruan?</p>
+            <input type="radio" name="oruan" id="isim" checked value="sim"><label for="isim">sim</label><input type="radio" name="oruan" id="inao" value="nao"><label for="inao" >não</label>
+            <p>voce acha que </p>
+            <input type="checkbox" name="oruan" id="ioruan"><label for="ioruan">o oruan ele devia ter vicado mais tempo na prisão</label><br>
+            <input type="checkbox" name="bosonaro" id="ibosonaro"><label for="ibosonaro">o bosonario devia ser presindente do brasil</label>
+            <p><label for="ifoto">foto de usuario: </label><input type="file" name="foto" id="ifoto"></p>
+            
+            <p><label for="icor">sua cor favorita: </label><input type="color" name="cor" id="icor">
+                <p>
+                    <label for="envio">modo de envio: </label>
+                    <select name="envio" id="envio">
+                        <optgroup label="privado">
+                            <option value="criptogravado">criptogravado</option>
+                            <option value="hacker">defensor hacker</option>
+                        </optgroup>
+                        <optgroup label="puplico">
+                            <option value="social">midia</option>
+                            <option value="rede">rede social</option>
+                        </optgroup>
+                    </select>
+                </p>
+        </fildset>
+        <p><label for="profe">profissão: </label>
+        <input type="text" name="profe" id="profe" list="prof">
+    <datalist id="prof">
+        <option value="cavalo">cavalista</option>
+        <option value="ADM">o puxa saco</option>
+        <option value="desempregado">inutil</option>
+    </datalist></p>
+    <p><label for="des">descrição do perfil: </label><br><textarea name="des" id="des" rows="20" cols="30" ></textarea></p>
+    <p><label for="num">digite um numero: </label><input type="number" name="num" id="num" oninput="cal() "></p><!--voce tanbem pode colocar o codigo dentro do oniput-->
+    <p><output name="resultado " id="res"></output></p>
+            <p><label for="inota">de uma nota nosso pro site </label><input type="range" name="nota" id="inota" max="5" min="0" ></p>
+            <p><input type="submit" value="enviar">
+            <input type="reset" value="limpar"></p>
+    </form>
+    <script>
+        function cal() {
+            res.innerHTML='que numero de beta'
+        }
+    </script>
+</body>
+</html>

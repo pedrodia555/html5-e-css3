@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+a,ul{
+    display: none;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+main::after{
+    content: "impressão do site www.site.com";
+}
